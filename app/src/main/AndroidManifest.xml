@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".GameActivity"
             android:exported="true"
             android:theme="@style/Theme.Moretech3.GameTheme">
         </activity>
