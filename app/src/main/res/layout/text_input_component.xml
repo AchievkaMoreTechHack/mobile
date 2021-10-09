@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        >
+        <EditText
+            android:inputType="text"
+            android:id="@+id/text_input_edittext"
+            android:hint="@string/text_input_hint_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="" />
+    </FrameLayout>
+    <include layout="@layout/horizontal_divider"/>
+    <Button
+        android:layout_weight="1"
+        android:text="@string/enter"
+        android:id="@+id/button"
+        style="@style/Theme.Moretech3.GameChooserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>

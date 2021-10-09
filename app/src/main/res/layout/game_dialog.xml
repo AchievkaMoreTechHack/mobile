@@ -30,7 +30,7 @@
                 />
         </FrameLayout>
         <include layout="@layout/vertical_divider"/>
-        <include layout="@layout/trio_button_chooser_component"
+        <include layout="@layout/text_input_component"
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

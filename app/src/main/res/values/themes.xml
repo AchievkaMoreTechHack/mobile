@@ -30,6 +30,7 @@
     <style name="Theme.Moretech3.GameChooserButton" parent="@style/Widget.AppCompat.Button.Borderless"
         >
         <item name="android:textColor">@color/game_dialog_button_color</item>
+        <item name="android:layout_gravity">center</item>
     </style>
 
     <color name="game_dialog_button_color">#6D88B7</color>
