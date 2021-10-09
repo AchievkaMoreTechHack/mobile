@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MoreTech 3</string>
+    <string name="text_example">SEPIC-Ćuk split-rail converter can be used to make positive and negative supplies from a single input voltage for relatively well-matched loads like operational amplifiers.  Transient models are time consuming. Average models reduce modeling time drastically.</string>
 </resources>

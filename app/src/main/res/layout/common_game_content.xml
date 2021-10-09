@@ -7,7 +7,28 @@
     android:id="@+id/game_root_view"
 
     android:background="@drawable/background"
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
 
     >
+        <include
+            android:id="@+id/game_dialog"
+            layout="@layout/game_dialog"
+            android:background="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/margin_game_dialog"
+            android:layout_marginEnd="@dimen/margin_game_dialog"
+            android:layout_marginBottom="@dimen/margin_game_dialog"
+            />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

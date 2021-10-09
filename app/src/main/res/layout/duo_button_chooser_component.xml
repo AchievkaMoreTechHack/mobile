@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+
+    <Button
+        android:layout_weight="1"
+        android:text="Button1"
+        android:id="@+id/choose_button_1"
+        style="@style/Theme.Moretech3.GameChooserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <include layout="@layout/horizontal_divider"/>
+    <Button
+        android:layout_weight="1"
+        android:text="Button2"
+        android:id="@+id/choose_button_2"
+        style="@style/Theme.Moretech3.GameChooserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>
