@@ -132,10 +132,12 @@ class GameActivity : AppCompatActivity() {
                 val button = findViewById<Button>(R.id.button)
                 val hint = actionData?.get(0)
                 editText.hint = hint
-                if(actionData?.get(1) == "str"){
-                    editText.inputType = InputType.TYPE_CLASS_TEXT
-                }else{
-                    editText.inputType = InputType.TYPE_CLASS_NUMBER
+                if(actionData?.size!! > 1) {
+                    if (actionData.get(1) == "str") {
+                        editText.inputType = InputType.TYPE_CLASS_TEXT
+                    } else {
+                        editText.inputType = InputType.TYPE_CLASS_NUMBER
+                    }
                 }
                 editText.doOnTextChanged { text, start, before, count ->
                     if (editText.inputType == InputType.TYPE_CLASS_TEXT ){
