@@ -24,8 +24,8 @@
 
     <ImageView
         android:id="@+id/story_character"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="520dp"
         android:src="@mipmap/ic_launcher"
         android:visibility="invisible"
 

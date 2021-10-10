@@ -61,7 +61,7 @@ class GameActivity : AppCompatActivity() {
         })
         viewModel.currentDialogIndex.observe(this, {
             Log.d(TAG, "onCreate, viewModel.currentSceneId.observe: $it")
-            updateStory(getStoryById(viewModel.currentStoryId.value!!, viewModel.stories.value?.stories))       //TODO CHECK ?
+            updateStory(getStoryById(viewModel.currentStoryId.value!!, viewModel.stories.value?.stories))
         })
 
         viewModel.stories.observe(this, Observer {
@@ -69,7 +69,7 @@ class GameActivity : AppCompatActivity() {
             viewModel.currentStoryId.value = it.startId
         })
         viewModel.errorMessage.observe(this, Observer {
-            //TODO Observe
+            findViewById<TextView>(R.id.dialog_text).text = it
         })
 
         viewModel.getAllStories()
@@ -81,8 +81,8 @@ class GameActivity : AppCompatActivity() {
         showExitAlertDialog()
     }
 
-    fun getStoryById(sceneId: Int, scenes: List<Story>?): Story? {       //TODO CHECK ?
-        if (scenes != null) {       //TODO CHECK FOR NULL
+    fun getStoryById(sceneId: Int, scenes: List<Story>?): Story? {
+        if (scenes != null) {
             for (scene in scenes){
                 if (scene.id == sceneId){
                     return scene

@@ -33,15 +33,15 @@ class GameViewModel constructor(private val repository: GameRepository)  : ViewM
             override fun onResponse(call: Call<ResponseData>, response: Response<ResponseData>) {
                 Log.d(TAG, "onResponse: $response")
                 if (response.code() == 200) {
-                    stories.postValue(response.body())        //TODO
+                    stories.postValue(response.body())
                 }else{
-                    errorMessage.postValue("Ошибка ${response.code()}") //TODO
+                    errorMessage.postValue("Ошибка ${response.code()}")
                 }
             }
 
             override fun onFailure(call: Call<ResponseData>, t: Throwable) {
                 Log.d(TAG, "onFailure: ${t.localizedMessage}")
-                errorMessage.postValue(t.message)           //TODO
+                errorMessage.postValue("Ошибка ${t.message}")
             }
         })
     }
