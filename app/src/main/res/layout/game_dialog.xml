@@ -8,6 +8,7 @@
     app:cardCornerRadius="@dimen/cardview_corner_radius"
     >
     <LinearLayout
+        android:id="@+id/dialog_linearlayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -30,8 +31,8 @@
                 />
         </FrameLayout>
         <include layout="@layout/vertical_divider"/>
-        <include layout="@layout/answer_duo_button"
-            android:id="@+id/container"
+        <FrameLayout
+            android:id="@+id/action_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />

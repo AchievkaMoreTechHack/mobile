@@ -17,6 +17,8 @@ class GameViewModel constructor(private val repository: GameRepository)  : ViewM
         const val TAG = "GameViewModel"
     }
 
+    val username = MutableLiveData<String>(null)
+    val userAge = MutableLiveData<Int>(null)
     val stories = MutableLiveData<ResponseData>()
     val currentStoryId = MutableLiveData<Int>()
     val isMale = MutableLiveData(true)
