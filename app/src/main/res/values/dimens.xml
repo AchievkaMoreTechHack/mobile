@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_game_dialog">32dp</dimen>
-    <dimen name="cardview_text_padding">8dp</dimen>
+    <dimen name="dialog_text_padding">8dp</dimen>
+    <dimen name="description_text_padding">16dp</dimen>
     <dimen name="divider_width">2dp</dimen>
     <dimen name="cardview_corner_radius">16dp</dimen>
     <dimen name="popup_padding">16dp</dimen>

@@ -1,10 +1,8 @@
-package com.achievka.animator
+package com.achievka.moretech3.view
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-
-import com.achievka.moretech3.GameActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

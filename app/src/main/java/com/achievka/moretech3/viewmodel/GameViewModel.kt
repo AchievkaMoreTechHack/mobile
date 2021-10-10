@@ -17,16 +17,17 @@ class GameViewModel constructor(private val repository: GameRepository)  : ViewM
         const val TAG = "GameViewModel"
     }
 
-    val username = MutableLiveData<String>(null)
-    val userAge = MutableLiveData<Int>(null)
     val stories = MutableLiveData<ResponseData>()
     val currentStoryId = MutableLiveData<Int>()
-    val isMale = MutableLiveData(true)
+    val currentDialogIndex = MutableLiveData<Int>()
     val errorMessage = MutableLiveData<String>()
+
+    val username = MutableLiveData<String>(null)
+    val userAge = MutableLiveData<Int>(null)
+    val isMale = MutableLiveData(true)
 
     fun getAllStories() {
         Log.d(TAG, "getAllScenes:")
-//        isMale.value = true
         val response = repository.getAllStories()
         response.enqueue(object : Callback<ResponseData> {
             override fun onResponse(call: Call<ResponseData>, response: Response<ResponseData>) {
@@ -34,7 +35,7 @@ class GameViewModel constructor(private val repository: GameRepository)  : ViewM
                 if (response.code() == 200) {
                     stories.postValue(response.body())        //TODO
                 }else{
-                    //TODO Handle case
+                    errorMessage.postValue("Ошибка ${response.code()}") //TODO
                 }
             }
 

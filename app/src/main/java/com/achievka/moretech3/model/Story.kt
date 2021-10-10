@@ -17,7 +17,7 @@ class Story {
 
     @SerializedName("description_preview")
     @Expose
-    var descriptionPreview: Any? = null
+    var descriptionPreview: String? = null
 
     @SerializedName("action_type")
     @Expose
@@ -41,7 +41,7 @@ class Story {
 
     @SerializedName("description")
     @Expose
-    var description: Any? = null
+    var description: String? = null
 
     @SerializedName("action_data_male")
     @Expose
