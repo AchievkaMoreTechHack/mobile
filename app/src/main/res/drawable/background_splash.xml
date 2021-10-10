@@ -4,7 +4,7 @@
     <item android:drawable="@drawable/background" />
     <item
         android:gravity="center"
-        android:drawable="@drawable/ic_launcher_splash_screen"
+        android:drawable="@drawable/playstore_icon"
         android:bottom="64dp" />
 
 </layer-list>
